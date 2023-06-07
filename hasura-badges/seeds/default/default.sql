@@ -7,12 +7,12 @@ TRUNCATE TABLE public.badge_reqs CASCADE;
 TRUNCATE TABLE public.badge_defs CASCADE;
 
 -- Reset the sequences
-ALTER SEQUENCE public.evidences_id_seq RESTART WITH 1;
-ALTER SEQUENCE public.proposals_id_seq RESTART WITH 1;
-ALTER SEQUENCE public.badges_id_seq RESTART WITH 1;
-ALTER SEQUENCE public.candidates_id_seq RESTART WITH 1;
-ALTER SEQUENCE public.badge_reqs_id_seq RESTART WITH 1;
-ALTER SEQUENCE public.badge_defs_id_seq RESTART WITH 1;
+--ALTER SEQUENCE public.evidences_id_seq RESTART WITH 1;
+--ALTER SEQUENCE public.proposals_id_seq RESTART WITH 1;
+--ALTER SEQUENCE public.badges_id_seq RESTART WITH 1;
+--ALTER SEQUENCE public.candidates_id_seq RESTART WITH 1;
+--ALTER SEQUENCE public.badge_reqs_id_seq RESTART WITH 1;
+--ALTER SEQUENCE public.badge_defs_id_seq RESTART WITH 1;
 
 -- Insert data into badge_defs table
 INSERT INTO public.badge_defs (id, description) VALUES
