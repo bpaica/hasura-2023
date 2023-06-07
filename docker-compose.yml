@@ -39,7 +39,7 @@ services:
       # Setup main db connection
       HASURA_GRAPHQL_DATABASE_URL: postgres://postgres:${POSTGRES_PASSWORD:-postgres}@postgres:5432/postgres
       HASURA_ADMIN_SECRET: ${HASURA_ADMIN_SECRET:-hasura}
-      # Apply the migrations at boot
+      # Apply the migrations at boot - test
       # (we achieve this via HasuraCLI commands running `make boot`)
       # HASURA_GRAPHQL_METADATA_DIR: "/project/metadata"
       # HASURA_GRAPHQL_MIGRATIONS_DIR: "/project/migrations"
