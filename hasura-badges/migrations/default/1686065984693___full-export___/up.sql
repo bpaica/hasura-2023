@@ -14,7 +14,7 @@ CREATE TABLE public.badges (
     id serial PRIMARY KEY,
     badge_defs_id integer,
     version timestamp without time zone,
-    data text,
+    data JSONB,
     FOREIGN KEY (badge_defs_id) REFERENCES public.badge_defs(id)
 );
 
